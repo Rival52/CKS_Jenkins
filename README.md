@@ -44,13 +44,18 @@ docker logs -f <conteneur_id>
 ```bash
 <IP_local>:8080
 ```
-### clic sur " Install plugins"
-### Puis Créer le 1er utilisateur Administrateur
-### Pour installer Plugin " Docker Pipeline"
+### 1. clic sur " Install plugins"
+### 2. Puis Créer le 1er utilisateur Administrateur
+### 3. Pour installer Plugin " Docker Pipeline"
 ```bash
 Guide : administrer Jenkins/Plugins/Plugins disponibles
 Sur le barre de recherche tape : "Docker Pipeline" puis installer
 ```
+### 4. Pour install Plugin "Kubernet Cd", Télécharger manuellement cette plugin sur lien ci-dessous
+```bash
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbU1CZTRWdVpJdDVxM2NFSWVtOWdnNzQwNnltQXxBQ3Jtc0ttelBiT1NIcHpsNW80U255cHlqdHU3cUYteUlKTk5HUFVWV2dJRURIRmdxbWE3eGxiRXJSYy1WbTN3QlBJbWd5ZnY4RDI5VXJtQnhpbDhtaHZsbndBOWFXSXh6ZTg3YXFoeUY5bWdWRWdYd1dfRFUxcw&q=https%3A%2F%2Fupdates.jenkins.io%2Fdownload%2Fplugins%2Fkubernetes-cd%2F1.0.0%2Fkubernetes-cd.hpi&v=XE_mAhxZpwU
+```
+
 
 
 
