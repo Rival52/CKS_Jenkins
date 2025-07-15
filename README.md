@@ -55,7 +55,7 @@ sudo sysctl --system
 
 ---
 
-## 📦 Étape 2 : Installer Docker
+## Étape 2 : Installer Docker
 
 ```bash
 sudo apt update
@@ -68,7 +68,7 @@ Vous pouvez remplacer Docker par `containerd` si besoin.
 
 ---
 
-## 📅 Étape 3 : Installer kubeadm, kubelet et kubectl
+## Étape 3 : Installer kubeadm, kubelet et kubectl
 
 ```bash
 
@@ -80,7 +80,7 @@ Si le dossier `/etc/apt/keyrings` n'existe pas, créez-le avec les bonnes permis
 sudo mkdir -p -m 755 /etc/apt/keyrings
 ```
 
-Télécharger ensuite la clé :
+Étape 1 :Télécharger ensuite la clé :
 
 ```bash
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | \
@@ -89,7 +89,7 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | \
 
 ---
 
-## Étape 2 : Ajouter le dépôt officiel Kubernetes (v1.30)
+Étape 2 : Ajouter le dépôt officiel Kubernetes (v1.30)
 
 ⚠Cette commande **remplacera** toute configuration existante dans `/etc/apt/sources.list.d/kubernetes.list` :
 
@@ -100,7 +100,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 
 ---
 
-## Étape 3 : Mettre à jour et installer kubeadm, kubelet, kubectl
+Étape 3 : Mettre à jour et installer kubeadm, kubelet, kubectl
 
 ```bash
 sudo apt-get update
@@ -110,7 +110,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ---
 
-## Activer kubelet au démarrage
+Activer kubelet au démarrage
 
 ```bash
 sudo systemctl enable --now kubelet
@@ -118,7 +118,7 @@ sudo systemctl enable --now kubelet
 
 ---
 
-## Vérification
+Vérification
 
 ```bash
 kubeadm version
@@ -199,7 +199,7 @@ kubeadm reset && sudo rm -rf ~/.kube /etc/cni /var/lib/kubelet
 ```
 
 
-## ⚙️ Installation
+## Installation Jenkins
 
 
 ### 2. Lancer Jenkins dans un conteneur Docker avec les droits nécessaires pour lui permettre d’exécuter d'autres conteneurs Docker depuis l'interface Jenkins.
