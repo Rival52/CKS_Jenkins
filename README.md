@@ -44,6 +44,7 @@ docker logs -f <conteneur_id>
 ```bash
 <IP_local>:8080
 ```
+### clic sur " Install plugins"
 
 
 
