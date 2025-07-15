@@ -34,6 +34,7 @@ docker ps
 # 2. Run docker logs pouir trouver l'itial mot de passe
 docker logs -f <conteneur_id>
 ```
+
 ### On a le mot de pass.
 ```bash
 993c3b3395ee4b7fa127fb5cd805c185
