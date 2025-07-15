@@ -8,7 +8,7 @@ KUBERNETES DEPLOYMENT USING JENKINS
 - Kubernetes deployment and service Yaml file
 
 ## ⚙️ Installation
-### Installation Docker
+### 1. Installation Docker
 
 ```bash
 # 1. Cloner le dépôt
@@ -20,7 +20,7 @@ sudo apt install docker.io
 sudo usermod -aG docker $USER
 ```
 
-### Lancer Jenkins dans un conteneur Docker avec les droits nécessaires pour lui permettre d’exécuter d'autres conteneurs Docker depuis l'interface Jenkins.
+### 2. Lancer Jenkins dans un conteneur Docker avec les droits nécessaires pour lui permettre d’exécuter d'autres conteneurs Docker depuis l'interface Jenkins.
 ```bash
 docker run -u 0 --privileged --name jenkins -it -d \
   -p 8080:8080 -p 50000:50000 \
@@ -34,8 +34,7 @@ docker ps
 # 2. Run docker logs pouir trouver l'itial mot de passe
 docker logs -f <conteneur_id>
 ```
-
-### On a le mot de pass.
+### 3. On a le mot de pass.
 ```bash
 993c3b3395ee4b7fa127fb5cd805c185
 ```
