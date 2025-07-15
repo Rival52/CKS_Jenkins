@@ -45,6 +45,12 @@ docker logs -f <conteneur_id>
 <IP_local>:8080
 ```
 ### clic sur " Install plugins"
+### Puis Créer le 1er utilisateur Administrateur
+### Pour installer Plugin " Docker Pipeline"
+```bash
+Guide : administrer Jenkins/Plugins/Plugins disponibles
+Sur le barre de recherche tape : "Docker Pipeline" puis installer
+```
 
 
 
