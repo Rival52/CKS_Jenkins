@@ -32,9 +32,9 @@ docker run -u 0 --privileged --name jenkins -it -d \
 docker ps
 
 # 2. Run docker logs pouir trouver l'itial mot de passe
-docker logs -f 790577f3374d
+docker logs -f <conteneur_id>
 ```
-### On a le mot de pass:
+### On a le mot de pass.
 ```bash
 993c3b3395ee4b7fa127fb5cd805c185
 ```
