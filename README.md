@@ -17,15 +17,19 @@ git clone https://github.com/votre-utilisateur/nom-du-projet.git
 sudo apt install docker.io
 # 4. ajoutl’utilisateur au groupe docker
 sudo usermod -aG docker $USER
+```
 
-# 5. Lancer Jenkins dans un conteneur Docker avec les droits nécessaires pour lui permettre d’exécuter d'autres conteneurs Docker depuis l'interface Jenkins.
+### Lancer Jenkins dans un conteneur Docker avec les droits nécessaires pour lui permettre d’exécuter d'autres conteneurs Docker depuis l'interface Jenkins.
+```bash
 docker run -u 0 --privileged --name jenkins -it -d \
   -p 8080:8080 -p 50000:50000 \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v $(which docker):/usr/bin/docker \
   -v /home/jenkins_home:/var/jenkins_home \
   jenkins/jenkins:latest
-# 🔍 Détails :
+```
+
+# Détails de cette commande:
 -u 0 → exécute le conteneur en tant que root
 
 --privileged → donne des droits étendus (attention à la sécurité)
