@@ -33,9 +33,12 @@ docker ps
 
 # 2. Run docker logs pouir trouver l'itial mot de passe
 docker logs -f 790577f3374d
-# 3. On a le mot de pass:
+```
+### On a le mot de pass:
+```bash
 993c3b3395ee4b7fa127fb5cd805c185
 ```
+
 ## Page Web Jenkins
 ### On peut accéder à la page web grâce à notre IP local
 ```bash
