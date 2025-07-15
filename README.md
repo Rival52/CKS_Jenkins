@@ -8,6 +8,7 @@ KUBERNETES DEPLOYMENT USING JENKINS
 - Kubernetes deployment and service Yaml file
 
 ## ⚙️ Installation
+### Installation Docker
 
 ```bash
 # 1. Cloner le dépôt
@@ -27,18 +28,21 @@ docker run -u 0 --privileged --name jenkins -it -d \
   -v $(which docker):/usr/bin/docker \
   -v /home/jenkins_home:/var/jenkins_home \
   jenkins/jenkins:latest
+# 1. Run docker ps
+docker ps
+
+# 2. Run docker logs pouir trouver l'itial mot de passe
+docker logs -f 790577f3374d
+# 3. On a le mot de pass:
+993c3b3395ee4b7fa127fb5cd805c185
+```
+## Page Web Jenkins
+### On peut accéder à la page web grâce à notre IP local
+```bash
+<IP_local>:8080
 ```
 
-# Détails de cette commande:
--u 0 → exécute le conteneur en tant que root
 
---privileged → donne des droits étendus (attention à la sécurité)
-
--v $(which docker):/usr/bin/docker → monte l’exécutable Docker dans le conteneur
-
--v /var/run/docker.sock:/var/run/docker.sock → permet à Jenkins d’exécuter Docker dans Docker
-
--v /home/jenkins_home:/var/jenkins_home → dossier persistant pour Jenkins
 
 # 4. Lancer l'application
 python app.py
