@@ -276,6 +276,4 @@ Enter directly
 
 
 
-
-# 4. Lancer l'application
-python app.py
+https://www.youtube.com/watch?v=XE_mAhxZpwU&pp=ygUYa3ViZXJuZXRlcyBqZW5raXMgKyBjaWNk
